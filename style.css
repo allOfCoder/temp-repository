@@ -4,12 +4,6 @@ body {
     padding: 0;
 }
 
-* {
-}
-
-.container {
-}
-
 header {
     height: 5vh;
 }
@@ -38,10 +32,6 @@ header {
 .gb_Be {
     height: 30px;
     width: 30px;
-}
-
-#gmail {
-
 }
 
 #user {
