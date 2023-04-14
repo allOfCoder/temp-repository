@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.digit {
+    display: flex;
+    gap: 10px
+}
+
+.dgt {
+    width: 150px;
+    height: 50px;
+}
+
+.active {
+    border: 2px solid red;
+}
+
+.table-container {
+    width: 40%;
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    border: 1px solid black;
+}
+
+th:first-child {
+    width: 20%;
+}
+
+th:last-child {
+    width: 50%;
+}
