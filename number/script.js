@@ -74,7 +74,7 @@ function handleNumbers(tryNumbers) {
     var logResult = `B: ${ballNum}, S: ${strikeNum}`;
     $table.childNodes[1].childNodes[tryCount*2+2].childNodes[3].innerHTML = logNumber;
     $table.childNodes[1].childNodes[tryCount*2+2].childNodes[5].innerHTML = logResult;
-    if (strikeNum == 3) {
+    if (strikeNum == nowDigit) {
         alert('축하드립니다!');
     }
     tryCount++;
