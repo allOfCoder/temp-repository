@@ -2,14 +2,24 @@ const $container = document.querySelector('.container');
 const $digit = document.querySelector('.digit');
 const $numberInput = document.querySelector('.number-input');
 const $numberInputButton = document.querySelector('.number-input-button');
-const $table = document.querySelector('.table');
+const $tbody = document.querySelector('.tbody');
 
 for (let i = 0; i < 3; i++) {
     let newDigitButton = document.createElement('button');
     newDigitButton.classList.add('digit-button');
     newDigitButton.textContent = `${i+3}자리`;
     $digit.appendChild(newDigitButton);
-}
+}//자릿수 버튼 생성
+for (let i = 0; i < 9; i++) {
+    let newInningTr = document.createElement('tr');
+    let newInningTd
+    for (let i = 0; i < 3; i++) {
+        newInningTd = document.createElement('th');
+        newInningTr.appendChild(newInningTd);
+    }
+    newInningTr.childNodes[0].innerHTML = `${i+1}`;
+    $tbody.appendChild(newInningTr);
+}//테이블 생성
 
 function lotteryHomerunNumber() {
     let randNumArr = Math.floor(100000000000 * Math.random()).toString().split('');
@@ -72,8 +82,8 @@ function handleNumbers(tryNumbers) {
     }
     ballNum = ballNum - strikeNum;
     var logResult = `B: ${ballNum}, S: ${strikeNum}`;
-    $table.childNodes[1].childNodes[tryCount*2+2].childNodes[3].innerHTML = logNumber;
-    $table.childNodes[1].childNodes[tryCount*2+2].childNodes[5].innerHTML = logResult;
+    $tbody.childNodes[tryCount].childNodes[1].innerHTML = logNumber;
+    $tbody.childNodes[tryCount].childNodes[2].innerHTML = logResult;
     if (strikeNum == nowDigit) {
         alert('축하드립니다!');
     }
