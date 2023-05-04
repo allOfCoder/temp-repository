@@ -1,0 +1,53 @@
+* {
+    border: 1px solid black;
+}
+
+body {
+    height: 1200px;
+}
+
+#root {
+    height: 100%;
+    display: flex;
+}
+
+.shopping-bag {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.shopping-bag > .item {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    margin-bottom: 50px
+}
+
+.item-box {
+    width: calc(100vw - 240px);
+    height: 96.5%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.selected {
+    display: none;
+}
