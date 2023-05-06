@@ -30,6 +30,7 @@ for (var i = 1; i <= itemAmount ; i++) {
     tempNode.addEventListener("click", (e) => {
         let target = returnTarget(e);
         appendItem(target);
+        console.log(target.id.substring(5, 7));
     });
     tempNode.innerHTML = `<img src="/temp-repository/dom/shoes/${i}.jpg">`
     tempNode.id = `item-${i}`;
