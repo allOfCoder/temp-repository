@@ -1,0 +1,15 @@
+header-set
+    header-menu: 메뉴 축소 버튼, 유튜브 홈
+    header-search: 검색바, 음성검색
+    header-user: 만들기, 알림, 유저
+contents-set
+    menu-set
+        youtube-menu
+        video-menu
+        subscribe-menu
+        quest-menu
+        youtube-more
+        footer
+    video-set
+        categories
+        videos
