@@ -104,4 +104,4 @@ function reloadCatImage2() {
 }
 
 $catImage.addEventListener("click", (e) => {reloadCatImage2()})
-
+reloadCatImage2();
