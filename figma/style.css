@@ -1,0 +1,116 @@
+.status-bar {
+    height: 56px;
+}
+
+.container {
+    position: relative;
+    width: 362px;
+    height: 743px;
+    background: #FFFFFF;
+    border: 1px solid black;
+}
+
+.main-screen {
+    display: flex;
+    flex-direction: column;
+}
+
+.back-line {
+    height: 60px;
+}
+
+.registration {
+    height: 60px;
+    margin-left: 40px;
+}
+
+.store-name {
+    height: 73px;
+    margin-left: 40px;
+}
+
+.step {
+    height: 63px;
+}
+
+.step-degree {
+    display: flex;
+    flex-direction: row;
+}
+
+.step-text {
+    margin-left: 39px;
+}
+
+.step-num {
+    margin-left: 146px;
+    margin-top: 5px;
+}
+
+.step-bar {
+    margin-top: -13px;
+    margin-left: 34px;
+    position: relative;
+}
+
+.step-bar-a {
+    position: absolute;
+}
+
+.step-bar-d {
+    position: absolute;
+}
+
+.inputs {
+    height: 290px;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.inputs > *  {
+    display: flex;
+    flex-direction: row;
+}
+
+.inputs > * > *:nth-child(2) {
+    padding-left: 20px;
+}
+
+.check {
+    height: 59px;
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.check > * {
+    width: 90px;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: row;
+}
+
+.credit {
+    display: flex;
+    flex-direction: row;
+}
+
+.account {
+    display: flex;
+    flex-direction: row;
+}
+
+.next-line {
+    display: flex;
+    justify-content: end;
+}
+
+.next-btn {
+    margin-right: 16px;
+}
