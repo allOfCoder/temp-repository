@@ -1,0 +1,52 @@
+.root {
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+}
+
+.todoMake {
+    border: 1px solid black;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todoInput {
+    height: 27px;
+    width: 560px;
+}
+
+.todoMakeBtn {
+    height: 30px;
+    width: 32px;
+}
+
+.todoUnit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.todoContent {
+    display:flex;
+    flex-direction: column;
+}
+
+.prodTime {
+    font-size: 12px;
+}
+
+.todoBtnBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.checkBtn , .deleteTodo {
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+}
