@@ -87,7 +87,6 @@ function reloadCatImage1() {
     .then((data) => data[0].url)
     .then((catUrl) => $catImage.src = catUrl)
 }
-
 function reloadCatImage2() {
     axios({
         method: "get",
@@ -105,3 +104,15 @@ function reloadCatImage2() {
 
 $catImage.addEventListener("click", (e) => {reloadCatImage2()})
 reloadCatImage2();
+
+//회원가입 저장
+function createUser(userIndex, profile) {
+    let userTemp = `user${userIndex}` 
+    let = {
+        id: profile[0],
+        password: profile[1],
+        phoneNumber: profile[2],
+        studentnumber: profile[3],
+    }
+
+}

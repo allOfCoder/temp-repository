@@ -1,0 +1,61 @@
+* :not(.string) {
+    border: 1px solid black;
+}
+
+.string {
+    display: flex;
+    justify-content: center;
+}
+
+.root {
+    margin: 0px;
+    width: 98vw;
+    height: 97vh;
+}
+
+.container {
+    border: 1px solid black;
+    width: 500px;
+    height: 600px;
+}
+
+.kind {
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stopwatch, .timer {
+    height: 80px;
+    width: 160px;
+    border-radius: 10px;
+}
+
+.time-line {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    height: 120px;
+    width: 300px;
+}
+
+.start-pause-line {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-pause-line > * {
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 5px;
+}
